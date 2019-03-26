@@ -3,12 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo">
+                <a class="main-header-logo" href="index.html">
                     <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глэйси»">
                 </a>
                 <ul class="site-navigation">
@@ -17,21 +20,21 @@
                     <li><a href="about-company.html">О компании</a></li>
                 </ul>
                 <div>
-                    <section class="modal modal-search">
+                    <div class="modal modal-search">
                         <button class="button" type="submit" name="search">
                             Поиск
                         </button>
-                        <form class="search-form" action="#" method="post">
+                        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                             <p>
                                 <label class="vissualy-hidden" for="user-search">Поиск по сайту</label>
                                 <input class="search-icon-user" id="user-search" type="text" name="search" placeholder="Что ищем?">
                             </p>
                         </form>
-                    </section>
+                    </div>
 
-                    <section class="modal modal-login">
+                    <div class="modal modal-login">
                         <a class="login-link" href="login.html">Вход</a>
-                        <form class="login-form" action="login.html" method="post">
+                        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                             <p>
                                 <label class="visually-hidden" for="user-login">Логин</label>
                                 <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
@@ -46,16 +49,16 @@
                             <a class="forget-login-link" href="forget-login.html">Забыли пароль?</a>
                             <a class="new-user-link" href="registration.html">Новая регистрация</a>
                         </form>
-                    </section>
+                    </div>
 
-                    <section class="modal modal-basket">
+                    <div class="modal modal-basket">
                         <a class="basket-link" href="basket.html">Корзина</a>
-                        <form class="basket-form" action="basket.html" method="post">
+                        <form class="basket-form" action="https://echo.htmlacademy.ru" method="post">
                             <button class="button" type="submit" name="basket-accept">
                                 Оформить заказ
                             </button>
                         </form>
-                    </section>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -70,13 +73,13 @@
 
             <div>
                 <span class="worktime">С 10 до 20, ежедневно</span>
-                <a href="tel:+88124502525">8 812 450-25-25</a>
+                <a class="tel" href="tel:+88124502525">8 812 450-25-25</a>
             </div>
 
 
             <section class="filters">
                 <h2 class="visually-hidden">Фильтры товаров</h2>
-                <form class="filter" method="get" action="#">
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>Сортировка:</legend>
                     </fieldset>
@@ -85,28 +88,28 @@
                     </fieldset>
                     <fieldset>
                         <legend>Жирность:</legend>
-                        <ul>
+                        <ul class="fat">
                             <li class="filter-option">
                                 <label for="filter-zero-percent">0%</label>
-                                <input class="vissualy-hidden filter-input filter-input-checkbox" type="checkbox" name="zero-percent" id="filter-zero-percent">
+                                <input class="vissualy-hidden filter-input filter-input-radio" type="radio" name="zero-percent" id="filter-zero-percent">
                             </li>
                             <li class="filter-option">
                                 <label for="filter-under-ten-percent">до 10%</label>
-                                <input class="vissualy-hidden filter-input filter-input-checkbox" type="checkbox" name="under-ten-percent" id="filter-under-ten-percent">
+                                <input class="vissualy-hidden filter-input filter-input-radio" type="radio" name="under-ten-percent" id="filter-under-ten-percent">
                             </li>
                             <li class="filter-option">
                                 <label for="filter-under-thirty-percent">до 30%</label>
-                                <input class="vissualy-hidden filter-input filter-input-checkbox" type="checkbox" name="under-thirty-percent" id="filter-under-thirty-percent">
+                                <input class="vissualy-hidden filter-input filter-input-radio" type="radio" name="under-thirty-percent" id="filter-under-thirty-percent">
                             </li>
                             <li class="filter-option">
                                 <label for="filter-higher-thirty-percent">выше 30%</label>
-                                <input class="vissualy-hidden filter-input filter-input-checkbox" type="checkbox" name="higher-thirty-percent" id="filter-higher-thirty-percent">
+                                <input class="vissualy-hidden filter-input filter-input-radio" type="radio" name="higher-thirty-percent" id="filter-higher-thirty-percent">
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Наполнители:</legend>
-                        <ul>
+                        <ul class="fillers">
                             <li class="filter-option">
                                 <label for="filter-chocolate">шоколадные</label>
                                 <input class="vissualy-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate">
